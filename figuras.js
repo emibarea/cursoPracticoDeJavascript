@@ -78,3 +78,64 @@ function areaCirculo(radio){
 // console.log("El area del circulo es de: " + parseInt(areaCirculo) + "cm^2");
 
 console.groupEnd();
+
+// Aca interactuamos con el html
+
+//Codigo Cuadrado
+function calcularPerimetroCuadrado(){
+ const input = document.getElementById("inputCuadrado");
+ const value = input.value;
+ const perimetro = perimetroCuadrado(value);
+ alert(perimetro);
+}
+
+function calcularAreaCuadrado(){
+    const input = document.getElementById("inputCuadrado");
+    const value = input.value;
+    const area = areaCuadrado(value);
+    alert(area);
+}
+
+//Codigo Triangulo
+function calcularPerimetroTriangulo(){
+    const input1 = document.getElementById("input1Triangulo");
+    const value1 = parseInt(input1.value);
+
+    const input2 = document.getElementById("input2Triangulo");
+    const value2 = parseInt(input2.value);
+
+    const input3 = document.getElementById("input3Triangulo");
+    const value3 = parseInt(input3.value);
+
+    const input4 = document.getElementById("input4Triangulo");
+    const value4 = parseInt(input4.value);
+
+    const perimetro = perimetroTriangulo(value1,value2,value3);
+    alert(perimetro);
+}
+
+function calcularAreaTriangulo(){
+    const input3 = document.getElementById("input3Triangulo");
+    const value3 = parseInt(input3.value);
+
+    const input4 = document.getElementById("input4Triangulo");
+    const value4 = parseInt(input4.value);
+
+    const area = areaTriangulo(value3,value4);
+    alert(area);
+}
+
+//Codigo Circulo
+function calcularPerimetroCirculo(){
+    const input = document.getElementById("inputCirculo");
+    const value = input.value;
+    const perimetro = perimetroCirculo(value);
+    alert(perimetro);
+}
+
+function calcularAreaCirculo(){
+    const input = document.getElementById("inputCirculo");
+    const value = input.value;
+    const area = areaCirculo(value);
+    alert(area);
+}

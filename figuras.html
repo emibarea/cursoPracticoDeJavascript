@@ -20,17 +20,60 @@
 
             <h2>Calcula el area y el perimetro de un cuadrado</h2>
            
-            <form action="">
+            <form>
                 
-                <label for="">Define cuanto mide cada lado del cuadrado</label>
+                <label for="inputCuadrado">Define cuanto mide cada lado del cuadrado</label>
                     
-                <input type="number">
+                <input id="inputCuadrado" type="number">
                     
-                <button>Calcular el perimetro</button>
+                <button type="button" onclick="calcularPerimetroCuadrado()">Calcular el perimetro</button>
                     
-                <button>Calcular el area</button>
+                <button type="button" onclick="calcularAreaCuadrado()">Calcular el area</button>
                 
             </form>
+
+            <h2>Calcula el area y el perimetro de un Triangulo</h2>
+
+                <p>Recuerda que para sacar el perimetro solo necesitas los valores de lado 1, lado 2 y la base. <br> Y para sacar el area solo necesitas la base y la altura.</p>
+            <form action="">
+                
+                <label for="input1Triangulo">Define cuanto mide el lado 1 del Triangulo</label>
+                    
+                <input id="input1Triangulo" type="number"><br>
+
+                <label for="input2Triangulo">Define cuanto mide el lado 2 del Triangulo</label>
+                    
+                <input id="input2Triangulo" type="number"><br>
+
+                <label for="input3Triangulo">Define cuanto mide la base del Triangulo</label>
+                    
+                <input id="input3Triangulo" type="number"><br>
+
+                <label for="input4Triangulo">Define cuanto mide la altura del Triangulo</label>
+                    
+                <input id="input4Triangulo" type="number"><br>
+
+                    
+                <button type="button" onclick="calcularPerimetroTriangulo()">Calcular el perimetro</button>
+                    
+                <button type="button" onclick="calcularAreaTriangulo()">Calcular el area</button>
+
+            </form>
+
+            <h2>Calcula el area y el perimetro de un Circulo</h2>
+
+            <form action="">
+
+                <label for="inputCirculo">Define cuanto mide el radio del Circulo</label>
+                    
+                <input id="inputCirculo" type="number">
+                    
+                <button type="button" onclick="calcularPerimetroCirculo()">Calcular el perimetro</button>
+                    
+                <button type="button" onclick="calcularAreaCirculo()">Calcular el area</button>
+
+            </form>
+
 
     </section>
 
